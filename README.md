@@ -4,7 +4,7 @@ This useful web app allows you to write HTML code on one side and see a live pre
 
 ## Live Demo
 
-- https://felipeg005.github.io/HTML-Editor-Vue/
+- [Click Here](https://felipeg005.github.io/HTML-Editor-Vue/)
 
 ## Built With
 
