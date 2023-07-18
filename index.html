@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>SproutLoud Editor</title>
+</head>
+<body id="app">
+  <div class="header-container">
+    <div>
+      <div class="logo">juanfelipedev</div>
+      <p>HTML Editor</p>
+    </div>
+    <div v-on:click="changeTheme" id="theme-button">Dark-mode</div>
+  </div>
+  <div class="editor-container" v-on:mouseup="stopResize">
+    <div class="text-container">
+      <textarea type="color" class="code-area" v-model="code"></textarea>
+    </div>
+    <div v-on:mousedown="startResize" class="resizer">
+      <div class="resizer-dot"></div>
+      <div class="resizer-dot"></div>
+      <div class="resizer-dot"></div>
+    </div>
+    <div class="live-code-container">
+      <iframe id="code-render-iframe" class="html-code-container" style="overflow:auto;" :srcdoc="code" sandbox="allow-same-origin" scrolling="yes"></iframe>
+    </div>
+  </div>
+</body>
+<script src="./app.js"></script>
+</html>

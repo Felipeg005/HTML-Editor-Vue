@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .header-container {
+    background-color: #f0f0f0;
+    height: 10%;
+    display: flex;
+    padding: 5px 5px 5px 15px;
+    align-items: center;
+  }
+  
+  .dark-header-container {
+    background: #394047;
+    color: #ffffff;
+  }
+  
+  .header-container > div > p {
+    text-align: right;
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  #theme-button {
+    margin: 0 20px 0 auto;
+    background-color: transparent;
+    border: 2px solid #6cc04a;
+    border-radius: 50px;
+    padding: 5px 10px;
+    height: fit-content;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .editor-container {
+    display: flex;
+    height: 88.5%;
+  }
+  
+  .text-container {
+    background-color: #6cc04a;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dark-text-container {
+    background: #181818;
+  }
+  
+  .resizer {
+    height: 100%;
+    width: 6px;
+    background-color: #394047;
+    cursor: col-resize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resizer:hover,
+  .resizer:hover:active {
+    background-color: #000000;
+    transition: 0.2s;
+    width: 7px;
+  }
+  
+  .resizer-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 2px;
+  }
+  
+  .dark-resizer {
+    background-color: #818181;
+  }
+  
+  .dark-resizer:hover,
+  .dark-resizer:hover:active {
+    background-color: #6cc04a;
+    transition: 0.2s;
+  }
+  
+  .code-area {
+    resize: none;
+    width: 95%;
+    height: 94%;
+    outline: none;
+    border-radius: 10px;
+    border: 0.5px solid green;
+    padding: 10px;
+  }
+  
+  .dark-code-area {
+    border: 0.5px solid #818181;
+    color: #fff;
+  }
+  
+  .dark-text-area {
+    background-color: #242629;
+  }
+  
+  .live-code-container {
+    width: 50%;
+  }
+  
+  .html-code-container {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  iframe > * {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    word-break: break-word;
+  }
